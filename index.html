@@ -403,12 +403,14 @@
     .project-media video,
     .project-media .video-placeholder {
       width: 100%;
+      height: auto;
+      display: block;
       aspect-ratio: 9/16;
       max-height: 420px;
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 16px;
-      object-fit: cover;
+      object-fit: contain;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -608,7 +610,6 @@
           <span class="skill-chip">SQLite</span>
           <span class="skill-chip">Git</span>
           <span class="skill-chip">Figma → UI</span>
-          <span class="skill-chip">CI/CD basics</span>
         </div>
       </div>
     </section>
@@ -617,35 +618,25 @@
     <section id="projects" class="tree-line">
       <div class="section-head">
         <span class="tag">02 — projects</span>
-        <h2>Four apps, four APKs.</h2>
+        <h2>Four apps & APKs.</h2>
       </div>
 
       <!-- PROJECT 1 -->
       <div class="project">
-        <div class="project-media">
-          <!-- Replace the src below with your own demo video file or hosted link -->
-          <video controls poster="">
-            <source src="project1-demo.mp4" type="video/mp4">
-          </video>
-        </div>
+          <div class="project-media">
+            <!-- Replace the src below with your own demo video file or hosted link -->
+            <video controls poster="">
+              <source src="videos/makarr.mp4" type="video/mp4">
+              </video>
+              </div>
         <div class="project-info">
           <span class="index">Project 01</span>
           <h3>MAKARR</h3>
-          <p>mobile application aimed at boosting citizen engagement by enabling municipalities to run opinion polls and
-            attract
-            investors. The app featured a robust reporting system that allowed users to capture photos, attach GPS
-            locations, and
-            submit issues directly to administrators, streamlining communication and improving responsiveness. I also
-            developed an
-            investment module that empowered investors to subscribe and view municipal projects by city, enhancing
-            transparency and
-            accessibility. To ensure scalability and efficient bug resolution, I applied Clean Architecture with
-            Riverpod’s
-            AsyncValue. On the technical side, I integrated Firebase authentication, real-time database, and cloud
-            storage,
-            successfully supporting over 1,000 concurrent users. This project combined practical civic impact with
-            strong technical
-            execution, showcasing my ability to build scalable, user-centric solutions.</p>
+          <p>I built MAKARR, a mobile app that helps municipalities run opinion polls, manage citizen reports with GPS and photos,
+            and attract investors through a dedicated project subscription module. The hardest challenge was ensuring scalability
+            and reliability while handling real time Firebase authentication, database, and cloud storage, which I solved using
+            Clean Architecture with Riverpod AsyncValue. The outcome: the app successfully ,streamlining civic engagement and
+            demonstrating my ability to deliver scalable, user centric solutions..</p>
           <div class="stack">
             <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Provider</span><span>Dio</span>
           </div>
@@ -662,28 +653,22 @@
       <div class="project">
         <div class="project-media">
           <video controls poster="">
-            <source src="project2-demo.mp4" type="video/mp4">
+            <source src="videos/auraFlix.mp4" type="video/mp4">
           </video>
         </div>
         <div class="project-info">
           <span class="index">Project 02</span>
           <h3>AuraFlix</h3>
-          <p>This app is a Hybrid Movie Recommendation System designed for movie enthusiasts who want personalized
-            suggestions while
-            browsing, searching, and rating films. Its core feature is a hybrid recommendation engine that combines
-            collaborative
-            filtering with content-based filtering to deliver more accurate and tailored recommendations. A standout
-            technical
-            highlight is the integration of the TMDB API with Dio, efficiently handling over 10,000 requests, paired
-            with a Node.js
-            backend that manages recommendation logic and secure JWT-based authentication. This blend of advanced
-            algorithms and
-            scalable architecture makes the app both user-friendly and technically robust.</p>
+          <p>I built AuraFlix, a hybrid movie recommendation app that combines collaborative and content based filtering to
+            deliver
+            personalized suggestions while browsing, searching, and rating films. The hardest challenge was scaling the TMDB API
+            integration with Dio and a Node.js backend to handle requests while maintaining secure JWT authentication and
+            smooth performance. The outcome: a technically robust, user friendly system that demonstrated advanced recommendation
+            logic and scalable architecture for movie enthusiasts.</p>
           <div class="stack">
             <span>Flutter</span><span>Riverpod</span><span>REST API</span><span>Dio</span>
           </div>
           <div class="project-actions">
-            <a href="project2.apk" class="apk-btn" download>⬇ Download APK</a>
             <a href="https://github.com/Omar-khodja/Movie-App-recommendation-Systeme" class="repo-btn"
               target="_blank">Source code →</a>
           </div>
@@ -694,16 +679,15 @@
       <div class="project">
         <div class="project-media">
           <video controls poster="">
-            <source src="project3-demo.mp4" type="video/mp4">
+            <source src="videos/todo_app.mp4" type="video/mp4">
           </video>
         </div>
         <div class="project-info">
           <span class="index">Project 03</span>
           <h3>Todo List</h3>
-          <p>This Flutter Todo List app is designed for productivity‑focused users who want to manage tasks with
+          <p>This Flutter Todo List app is designed for productivity focused users who want to manage tasks with
             categories, due
-            dates, and completion tracking. Its core feature is a smart reminder system that notifies users when
-            deadlines arrive,
+            dates,
             ensuring they never miss important tasks. A key technical highlight is the use of an SQLite database for
             persistent
             storage, which guarantees 100% offline functionality so users can access and manage their tasks anytime,
@@ -723,7 +707,7 @@
       <div class="project">
         <div class="project-media">
           <video controls poster="">
-            <source src="project4-demo.mp4" type="video/mp4">
+            <source src="videos/recipe_app.mp4" type="video/mp4">
           </video>
         </div>
         <div class="project-info">
